@@ -1,0 +1,24 @@
+{
+  "name": "coming-soon",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=development parcel ./src/index.html",
+    "build": "parcel build --no-source-maps ./src/index.html && cp ./src/_redirects dist/_redirects",
+    "clean": "rm dist/* -rf && rm .parcel-cache/* -rf"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "@wordpress/dom-ready": "^3.2.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "bulma": "^0.9.3",
+    "parcel": "^2.0.1"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
+  },
+  "author": "Stav Geffen <stavgeffen@gmail.com> (https://github.com/panstav)",
+  "license": "ISC"
+}
